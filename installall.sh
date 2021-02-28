@@ -20,7 +20,7 @@ rm -rf /User/Documents/Uncursus
 mkdir /User/Documents/Uncursus
 apt update
 apt install wget -y --allow-unauthenticated
-wget https://github.com/brennanleblanc0/Uncursus/blob/new/DebProcurusSystem.zip?raw=true --directory-prefix=/User/Documents/Uncursus/
+wget https://github.com/brennanleblanc0/Uncursus/blob/new/DebProcursusSystem.zip?raw=true --directory-prefix=/User/Documents/Uncursus/
 unzip /User/Documents/Uncursus/DebProcursusSystem.zip?raw=true -d /User/Documents/Uncursus/
 dpkg -i /User/Documents/Uncursus/DebProcursusSystem/*.deb
 echo "Done. Create Custom Directory For Download All Files Requied. Path (/User/Documents/)."
@@ -45,5 +45,6 @@ rm -rf /User/Documents/Uncursus/
 rm /etc/apt/sources.list.d/odyssey.sources
 echo "All Done."
 rm -rf /Aplications/Cydia.app
+uicache -a
 killall SpringBoard
 fi
