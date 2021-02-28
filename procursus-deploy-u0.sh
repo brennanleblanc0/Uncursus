@@ -99,12 +99,12 @@ echo 'rm org.coolstar.sileo_1.8.1_iphoneos-arm.deb' >> odyssey-device-deploy.sh
 echo 'rm odyssey-device-deploy.sh' >> odyssey-device-deploy.sh
 
 echo "Downloading Resources..."
-curl -L -O https://github.com/coolstar/odyssey-bootstrap/raw/master/bootstrap_1500-ssh.tar.gz -O https://github.com/coolstar/odyssey-bootstrap/raw/master/bootstrap_1600-ssh.tar.gz -O https://github.com/coolstar/odyssey-bootstrap/raw/master/migration -O https://github.com/coolstar/odyssey-bootstrap/raw/master/org.coolstar.sileo_1.8.1_iphoneos-arm.deb
+curl -L -O https://github.com/coolstar/odyssey-bootstrap/raw/master/bootstrap_1500-ssh.tar.gz -O https://github.com/coolstar/odyssey-bootstrap/raw/master/bootstrap_1600-ssh.tar.gz https://github.com/coolstar/odyssey-bootstrap/raw/master/bootstrap_1700-ssh.tar.gz -O https://github.com/coolstar/odyssey-bootstrap/raw/master/migration -O https://github.com/coolstar/odyssey-bootstrap/raw/master/org.coolstar.sileo_1.8.1_iphoneos-arm.deb
 clear
 if [[ ! "${ARM}" = yes ]]; then
 	echo "Copying Files to your device"
 	echo "Default password is: alpine"
-	scp -P4444 -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" bootstrap_1500-ssh.tar.gz bootstrap_1600-ssh.tar.gz migration org.coolstar.sileo_1.8.1_iphoneos-arm.deb odyssey-device-deploy.sh root@127.0.0.1:/var/root/
+	scp -P4444 -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" bootstrap_1500-ssh.tar.gz bootstrap_1600-ssh.tar.gz bootstrap_1700-ssh.tar.gz migration org.coolstar.sileo_1.8.1_iphoneos-arm.deb odyssey-device-deploy.sh root@127.0.0.1:/var/root/
 	clear
 fi
 echo "Installing Procursus bootstrap and Sileo on your device"
