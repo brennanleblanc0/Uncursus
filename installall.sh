@@ -21,8 +21,8 @@ mkdir /User/Documents/Uncursus
 apt update
 apt install wget -y --allow-unauthenticated
 wget https://github.com/brennanleblanc0/Uncursus/blob/new/DebProcurusSystem.zip?raw=true --directory-prefix=/User/Documents/Uncursus/
-unzip /User/Documents/Uncursus/DebProcurusSystem.zip?raw=true -d /User/Documents/Uncursus/
-dpkg -i /User/Documents/Uncursus/DebProcurusSystem/*.deb
+unzip /User/Documents/Uncursus/DebProcursusSystem.zip?raw=true -d /User/Documents/Uncursus/
+dpkg -i /User/Documents/Uncursus/DebProcursusSystem/*.deb
 echo "Done. Create Custom Directory For Download All Files Requied. Path (/User/Documents/)."
 mkdir /User/Documents/Uncursus/u0
 wget https://github.com/brennanleblanc0/Uncursus/blob/new/DebPatch.zip?raw=true --directory-prefix=/User/Documents/Uncursus/
