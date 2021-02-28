@@ -6,11 +6,13 @@ A9-A13 Is Supported
 
 Credits :
 
-Me : Script To Patch Procursus Installtation For Unc0ver
+Yaya4 : Script To Patch Procursus Installtation For Unc0ver
 
 https://github.com/ProcursusTeam : For The Bootstrap
 
 https://github.com/coolstar : For The Procursus Deploy Script
+
+brennanleblanc0 : Update the script to iOS 14 as well as updating the default packages
 
 Thanks To:
 
@@ -22,7 +24,7 @@ Steps :
 
 2) Rejailbreak With Unc0ver
 
-3) Open Cydia Refrsesh Sources And Install OpenSSH Package
+3) Open Cydia Refrsesh Sources And Install OpenSSH And cURL
 
 *** Must Have Computer For Launch The Script SSH Over IP  (Mac User : User Terminal) (Windows User : User CMD) DO NOT USE NEWTERM***
 
